@@ -1,0 +1,74 @@
+.recently-added {
+    border-color: $blue-dark;
+    
+    .products {
+        padding: 15px;
+    }
+    
+    .item {
+        position: relative;
+        padding: 10px 0 10px 0;
+        height: 70px;
+        border-bottom: 1px solid $border-grey;
+        
+        &:last-child {
+            border: none;
+        }
+        
+        img {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 50px;
+            height: 50px;
+        }
+        
+        a {
+            display: block;
+            padding: 0 15px 0 65px;
+            font-size: calcRem(12px);
+            font-weight: 700;
+        }
+        
+        .info {
+            margin: 5px 0 0 0;
+            padding: 0 15px 0 65px;
+            color: #999999;
+            font-size: calcRem(12px);
+        }
+        
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            padding: 3px 5px;
+            color: $white;
+            font-size: calcRem(10px);
+            font-weight: 700;
+            border-radius: 10px;
+            
+            &.yellow {
+                background: $yellow;
+            }
+            
+            &.blue {
+                background: $blue;
+            }
+            
+            &.red {
+                background: $red;
+            }
+            
+            &.green {
+                background: $green;
+            }
+        }
+    }
+    
+    & .content > .link {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        border-top: 1px solid $border-grey;
+    }
+}

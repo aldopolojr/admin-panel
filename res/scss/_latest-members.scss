@@ -1,0 +1,46 @@
+.latest-members {
+    border-color: $red;   
+    
+    .members {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .item {
+        margin: 10px 0;
+        width: 20.5%;
+        text-align: center;
+        
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
+        
+        .name a {
+            display: inline-block;
+            margin: 5px 0 2px;
+            color: #444444;
+            font-size: calcRem(14px);
+            font-weight: 700;
+            
+            &:hover {
+                color: #999999;
+            }
+        }
+        
+        .time {
+            color: #999999;
+            font-size: calcRem(12px);
+            font-weight: 300;
+        }
+    }
+    
+    .link {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        border-top: 1px solid $border-grey;
+    }
+}
